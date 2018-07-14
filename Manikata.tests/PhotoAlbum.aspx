@@ -50,7 +50,32 @@
 
 
              });
-         });
+
+
+          });
+
+          function getDailog(id) {
+              $("#dialog-3").dialog({
+                  width: "99%",
+                  position: { my: "top", at: "top", of: window },
+                  open: function (type, data) {
+
+                  },
+                  modal: true
+              });
+
+              $('.flexslider').flexslider({
+                  animation: "slide",
+                  controlNav: true
+              });
+
+              var slider = $('.flexslider').data('flexslider');
+              var animationSpeed = slider.vars.animationSpeed; 	//save animation speed to reset later
+              slider.vars.animationSpeed = 0;
+              slider.flexAnimate(id); 					//position index for desired slide goes here
+              slider.vars.animationSpeed = animationSpeed;
+
+          }
       </script>
 </head>
 <body>
@@ -80,6 +105,10 @@
         </div>
 
         <div id = "opener-3">Open Dailog</div>
+
+              <div id = "opener-2" onclick="getDailog(2)">Open Dailog2</div>
+
+              <div id = "opener-1" onclick="getDailog(1)">Open Dailog2</div>
 
 
  
