@@ -69,11 +69,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\IMG_0509.JPG" />
+    <Content Include="Images\IMG_0510.JPG" />
+    <Content Include="Images\IMG_0511.JPG" />
+    <Content Include="Images\IMG_0513.JPG" />
+    <Content Include="Images\IMG_0514.JPG" />
+    <Content Include="Images\IMG_0515.JPG" />
+    <Content Include="Images\IMG_0516.JPG" />
+    <Content Include="Images\IMG_0517.JPG" />
+    <Content Include="Images\IMG_0518.JPG" />
+    <Content Include="PhotoAlbum.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoAlbum.aspx.cs">
+      <DependentUpon>PhotoAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoAlbum.aspx.designer.cs">
+      <DependentUpon>PhotoAlbum.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
